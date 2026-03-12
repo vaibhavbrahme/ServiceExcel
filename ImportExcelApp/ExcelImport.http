@@ -1,0 +1,25 @@
+### Import Excel File
+POST http://localhost:5055/api/excel/import
+Content-Type: application/json
+
+{
+  "filePath": "C:\\path\\to\\your\\sample.xlsx",
+  "sheetName": "Sheet1",
+  "hasHeaders": true
+}
+
+### Import Excel File with Default Settings (First Sheet, Has Headers)
+POST http://localhost:5055/api/excel/import
+Content-Type: application/json
+
+{
+  "filePath": "C:\\path\\to\\your\\sample.xlsx"
+}
+### Import Excel File Without Headers
+POST http://localhost:5055/api/excel/import
+Content-Type: application/json
+
+{
+  "filePath": "C:\\path\\to\\your\\sample.xlsx",
+  "hasHeaders": false
+}

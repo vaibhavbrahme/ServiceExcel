@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "EeS5aPOVqGo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Text.Json' 7.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "projectPath": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8",
+        ".NETFramework,Version=v4.8/win-x86"
+      ]
+    }
+  ]
+}

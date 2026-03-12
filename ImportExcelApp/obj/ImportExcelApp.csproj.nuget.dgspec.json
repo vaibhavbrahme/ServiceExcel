@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj",
+        "projectName": "ImportExcelApp",
+        "projectPath": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\ImportExcelApp.csproj",
+        "packagesPath": "C:\\Users\\vaibhav.brahme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vaibhav.brahme\\Documents\\GitHub\\ServiceExcel\\ImportExcelApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vaibhav.brahme\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
