@@ -63,7 +63,7 @@ namespace ImportExcelApp.Services
             if (extension == ".xlsx")
             {
                 // For Excel 2007+ (.xlsx)
-                connectionString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={filePath};Extended Properties='Excel 12.0 Xml;HDR={(hasHeaders ? "YES" : "NO")};'";
+                connectionString = $"Provider=Microsoft.ACE.OLEDB.16.0;Data Source={filePath};Extended Properties='Excel 12.0 Xml;HDR={(hasHeaders ? "YES" : "NO")};'";
             }
             else if (extension == ".xls")
             {
@@ -274,7 +274,7 @@ namespace ImportExcelApp.Services
                     }
                     if (anyFound)
                     {
-                        response.TemplateRecords.Add(mergedRecord);
+                        response.CreateICTemplateFields.Add(mergedRecord);
                     }
 
                     // now attempt to locate a header row for line items and populate them
@@ -338,7 +338,7 @@ namespace ImportExcelApp.Services
                             }
                         }
                             if (liFound)
-                                response.LineItems.Add(lineItem);
+                                response.CreateICLineItem.Add(lineItem);
                         }
                     }
 

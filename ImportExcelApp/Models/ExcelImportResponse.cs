@@ -29,13 +29,13 @@ namespace ImportExcelApp.Models
         /// Each entry corresponds to a row that contained one or more
         /// template field names; values are taken from the adjacent cell.
         /// </summary>
-        public List<CreateICTemplateFields> TemplateRecords { get; set; } = new();
+        public List<CreateICTemplateFields> CreateICTemplateFields { get; set; } = new();
 
         /// <summary>
         /// List of IC Line Items - detailed row-level information
         /// Each item represents a line in the purchase order
         /// </summary>
-        public List<CreateICLineItem> LineItems { get; set; } = new();
+        public List<CreateICLineItem> CreateICLineItem { get; set; } = new();
 
     }
 }

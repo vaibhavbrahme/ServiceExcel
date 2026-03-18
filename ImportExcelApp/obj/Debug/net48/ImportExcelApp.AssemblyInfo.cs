@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImportExcelApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fdd1aa75d1c9870c380c7a02db44d8eae5ffc61")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImportExcelApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImportExcelApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
