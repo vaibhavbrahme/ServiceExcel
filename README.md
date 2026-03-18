@@ -1,6 +1,6 @@
 # Excel Import Service
 
-A C# ASP.NET Core REST API that extracts data from Excel files and returns the result as JSON objects.
+A C# ASP.NET Framework 4.8 Web API application that extracts data from Excel files and returns JSON. This project is designed for IIS hosting (System.Web / Web API 5.x).
 
 ## Project Structure
 
@@ -28,13 +28,12 @@ ImportExcelApp/
 - ✅ Returns data as JSON with descriptive response
 - ✅ Comprehensive error handling
 - ✅ Logging support
-- ✅ OpenAPI/Swagger documentation
 
 ## Dependencies
 
 - **EPPlus 7.4.1** - Excel file reading library
 - **.NET Framework 4.8** - Target framework
-- no external web framework – simple HttpListener-based server
+- **ASP.NET Web API 5.x** - Web API framework for IIS hosting
 
 ## API Endpoint
 
@@ -107,7 +106,7 @@ If the sheet contains a tabular section whose header row includes **"Item Number
 
 ### Prerequisites
 - .NET Framework 4.8 developer targeting pack (can build with Visual Studio 2019/2022)
-- Visual Studio Code or Visual Studio (used for editing; the app runs as a console)
+- Visual Studio (for IIS Express or publish deployment)
 
 
 ### Installation
@@ -117,14 +116,21 @@ If the sheet contains a tabular section whose header row includes **"Item Number
    dotnet build -f net48
    ```
 
-2. **Run the application:**
-   - either launch the generated executable directly:
-     ```bash
-     bin\Debug\net48\ImportExcelApp.exe
-     ```
-   - or (if your SDK supports it) use `dotnet run -f net48`.
+2. **Publish for IIS deployment:**
+   ```bash
+   dotnet publish -c Release -f net48 -o publish
+   ```
 
-   The console will output `Listening on http://localhost:5055/`. You can then POST to `/api/excel/import` at that address.
+3. **Deploy to IIS** (recommended):
+   - create website/app in IIS Manager
+   - physical path -> `...\publish`
+   - app pool .NET CLR v4.0, Integrated pipeline
+   - verify `web.config` is present in published output
+
+4. **Run with IIS Express (local dev)**:
+   - use Visual Studio F5 with the Web API profile
+
+> `dotnet run -f net48` is not applicable for IIS-hosted `System.Web` Web API projects.
 
 ### Usage
 
@@ -205,12 +211,10 @@ The service handles various error scenarios:
 - Handles data extraction and validation
 - Includes comprehensive logging
 
-## OpenAPI Documentation
+## API Documentation
 
-When running in Development mode, access the OpenAPI documentation at:
-```
-https://localhost:7180/openapi/v1.json
-```
+Use standard API tools to test this endpoint:
+- `POST /api/excel/import`
 
 ## Features & Enhancements
 
