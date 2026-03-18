@@ -1,17 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- switch to .NET Framework 4.8 and enable latest C# features -->
+    <!-- .NET Framework 4.8 Web API app for IIS -->
     <TargetFramework>net48</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-    <!-- executable output so dotnet run / msbuild produces an .exe -->
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
+    <UseIISExpress>true</UseIISExpress>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- OleDb is part of the framework on net48, no package needed -->
-    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http" />
+    <Reference Include="System.Web.Http.WebHost" />
   </ItemGroup>
 
 </Project>
